@@ -1,5 +1,9 @@
 import HeroImage from '../../assets/images/hero.png'
-import Rectangle1 from '../../assets/images/Rectangle.png'
+import ForWomen from '../../assets/images/ForWomen.png'
+import ForMen from '../../assets/images/FroMen.png'
+import ForPregWomen from '../../assets/images/ForPreWomen.png'
+import ForChild from '../../assets/images/FroChild.png'
+import HomeComp from '../../component/Home/HomeComp'
 
 export const  Home =() => {
   return (
@@ -14,11 +18,11 @@ export const  Home =() => {
         </div>
       </div>
     </div>
-    <div className="flex p-28">
-      <div className='grid'>
-      <img src={Rectangle1} alt="" />
-      <button className='bg-zinc-300 w-52 justify-self-center h-14 -my-9 '>For Women</button>
-      </div>
+    <div className="flex p-28 gap-x-7">
+      <HomeComp src={ForWomen} name='For Women'></HomeComp>
+      <HomeComp src={ForMen} name='For Men'></HomeComp>
+      <HomeComp src={ForPregWomen} name='For Pregnant Women'></HomeComp>
+      <HomeComp src={ForChild} name='For children'></HomeComp>
     </div>
     <div className="grid justify-items-center px-48 ">
       <h1 className='font-serif decoration--grey-800 text-5xl'>New Arrivals</h1>
